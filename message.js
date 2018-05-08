@@ -50,7 +50,7 @@ console.log(1)
             this.form.addEventListener('submit', function (e) {
                 e.preventDefault()
                 this.savemessage()
-            })
+            }.bind(this))
         },
         savemessage: function () {
             let myform = this.form
