@@ -1,0 +1,122 @@
+.banner{height: 520px;background-image: url(http://p4cnv6qxt.bkt.clouddn.com/3.jpg);
+    background-position: center;background-size: cover;}
+.banner .mask{height: 520px; background-color: rgba(0, 0, 0, 0.7);}
+a { text-decoration: none;}
+body{background: rgb(255, 248, 245); margin: 0;}
+* { margin: 0; padding: 0;list-style: none;}
+.clearfix::after {content: '';display: block; clear: both;}
+.topNavBar{position: fixed;width: 100%;padding: 20px 0 20px 0;top: 0;left: 0;
+transition: all 0.7s;color:rgb(255, 193, 157);}
+.topNavBar.sticky{background: white;padding: 10px 0;z-index: 1;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);color: rgb(114, 103, 97);}
+.intopNavBar{ padding: 0 16px;}
+.topNavBar nav{padding-bottom: 2px;}
+.topNavBar nav > ul{margin: 0; padding: 0;}
+.topNavBar nav > ul > li{position:relative;float: left;margin-left: 17px;margin-right: 17px;}
+.topNavBar nav > ul > li >a{font-size: 15px;font-weight: bold;color: inherit;
+    display: block;padding-top: 9px; padding-bottom: 5px;position: relative;}
+.logo{font-size: 24px;font-family: 'Arial Black';}
+.rs{margin-right: 5px;color: rgb(252, 145, 95)}
+.card{color: rgb(114, 103, 97);}
+.topNavBar nav > ul > li.active > a::after,
+.topNavBar nav > ul > li.light > a::after
+ {content:'';display: block;position: absolute;
+    top:100%;left: 0;width:100%;height:3px; background:rgb(230, 121, 70);animation: slide .3s;}
+@keyframes slide{
+    0%{width: 0}
+    100%{width: 100%}
+}
+.topNavBar .submenu{display: none;position: absolute;right:0;top:100%;
+    background: rgb(255, 247, 247);color: rgb(114, 103, 97);margin-top: 3px;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);}
+.topNavBar li.active>.submenu{display: block;animation: menuslide .3s;}
+@keyframes menuslide{
+    0%{margin-right: 100%}
+    100%{margin-right: 0%}
+}
+.topNavBar .submenu > li{white-space: nowrap;padding: 5px 10px;}
+.userCard {max-width: 940px;margin-left: auto;margin-right: auto;
+     background-color: rgb(247, 239, 239);border-radius: 7px;
+    box-shadow: 0px 0px 14px 2px rgba(89,67,65,0.7); }
+.welcome {margin-top: 10px;background: rgb(252, 145, 95);color: white;display: inline-block;
+    padding: 4px 16px; line-height: 22px;position: relative;margin-bottom: 10px;}
+.triangle{display: block;border: 10px solid transparent;width: 0px;border-left-color: rgb(252, 145, 95);
+    border-top-width: 0px;position: absolute;left: 4px;top: 100%;}
+.picture{float: left;margin-right: 30px;}
+.text{float: left;margin-left: 60px;width: 470px;}
+.text h1{margin: 18px 0 5px 0;}
+.text hr{margin: 10px 0 20px 0;}
+.pictureAndText {padding: 50px;}
+.userCard dl dt,
+.userCard dl dd{float: left;padding: 5px 0;}
+.userCard dl dt{ width: 30%;font-weight: bold;}
+.userCard dl dd{width: 70%;color: #9da0a7;}
+.media{ background: rgb(252, 145, 95);text-align: center;border-radius: 7px;}
+.media > a{display: inline-block;width: 40px;line-height: 30px;
+    padding: 5px 0;border-radius: 50%;margin: 16px;}
+.userCard svg{ width: 30px; height: 30px; fill: white;vertical-align: top;}
+.media > a:hover{background: rgb(230, 121, 70);}
+main{margin-top:-320px;}
+.download{text-align: center;}
+.downRe{display: inline-block;border: 1px solid rgb(197, 194, 194);font-size: 14px;
+    padding: 20px 52px;background: #fff7f7;margin: 30px;border-radius: 3px;
+    font-weight: bold;transition: box-shadow 0.2s;color:  rgb(230, 121, 70);}
+.downRe:hover{box-shadow: 4px 3px 11px 0px rgba(150,140,132,0.75);}
+.self{max-width: 940px;margin-left: auto;margin-right: auto;
+    text-align: center;line-height: 1.8;font-size: 20px;}
+.skills,
+.portfolio{max-width: 820px;margin-left: auto;margin-right: auto;margin-top: 50px;}
+.skills > ol ,
+.portfolio > nav > ol{list-style: none;}
+.skills > h2 ,
+.weisha > h2 ,
+.portfolio > h2 {margin-top: 100px; margin-bottom:32px;text-align: center;color: #3d4451;font-size: 34px;line-height: 1.2;font-weight: 600;}
+.skills h3 {font-size: 14px;line-height: 1.1;padding-right: 40px;}
+.skills > ol {background: white;box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    padding: 50px 50px 10px;margin-top: 30px;}
+.skills > ol > li {float: left;width: 48%;box-sizing: border-box;}
+section.skills > ol > li:nth-child(even) {float: right;}
+
+.skills .progressBar {height: 5px;background: #FAE1E1;border-radius: 2px;margin: 4px 0 40px;
+overflow: hidden}
+
+.skills .progressBar > .progress {height: 100%;background: rgb(255, 120, 122);border-radius: 2px;
+width:70%; transform: translateX(0);transition: all 1s}
+
+.portfolio {text-align: center;margin-bottom: 100px;}
+.portfolio > nav{text-align: center;}
+.portfolio > nav > ol{margin: 20px auto;display: inline-block;vertical-align: top;}
+.portfolio > nav > ol > li{float: left;margin-left: 40px;cursor: pointer;}   
+.portfolio > nav > ol > li:first-child{margin-left: 0;}
+.portfolio > nav{display: inline-block;vertical-align: top;margin-top: 12px;}
+.portfolio > nav .bar{ height: 5px; background: rgb(255, 225, 204); margin-top: 5px;
+    margin-bottom: 28px; border-radius: 2px;}
+.portfolio > nav .bar-inner{height: 100%;background: rgb(255, 161, 163);border-radius: 2px;transition: all 0.3s;}
+.portfolio > nav .bar.state-1 .bar-inner{margin-left: 0;width: 50px;}
+section.portfolio > nav .bar.state-2 .bar-inner{margin-left: 65px;width: 50px;}
+section.portfolio > nav .bar.state-3 .bar-inner{margin-left: 140px;width: 96px;}
+section.portfolio .works{ position: relative; } 
+section.portfolio .works > .big, section.portfolio .works > .small { position: absolute; }
+.swiper-container {
+    width: 888px;
+    height: 666px;
+  }
+  .swiper-slide{background: rgb(255, 229, 229);}
+  .swiper-button-prev{right: 100%;left: auto;margin-top: 18px; outline: none}
+  .swiper-button-next{left: 100%;right: auto;margin-top: 18px;outline: none}
+  .icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+[data-x].active{outline:1px solid red}
+[data-x].offset{
+    transform: translateY(50px);
+}
+[data-x]{
+    transform: translateY(0);
+    transition: all 0.5s;
+}

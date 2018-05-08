@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>球球的个人简历</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css">
+  <link rel="stylesheet" href="./m.css">
+  <script src="//at.alicdn.com/t/font_570785_jecji7jhmfzdunmi.js"></script>
+</head>
+
+<body>
+  <div id="topbar" class="topNavBar">
+    <div class="intopNavBar clearfix">
+      <a class="logo" href="#" alt="logo" style="float: left;">
+        <span class="rs">RS</span>
+        <span class="card">card</span>
+      </a>
+      <nav class="menu" style="float: right;">
+        <ul class="clearfix">
+          <li>
+            <a href="#siteabout">关于</a>
+          </li>
+          <li>
+            <a href="#siteskills">技能</a>
+          </li>
+          <li>
+            <a href="#siteworks">作品</a>
+            <ul class="submenu">
+              <li>作品1</li>
+              <li>作品2</li>
+              <li>作品3</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">博客</a>
+            <ul class="submenu">
+              <li>博客1</li>
+              <li>博客2</li>
+              <li>博客3</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">日历</a>
+          </li>
+          <li>
+            <a href="#">联系方式</a>
+          </li>
+          <li>
+            <a href="#">其他</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="mask"></div>
+  </div>
+  <main>
+
+    <div data-x id="siteabout" class="userCard">
+      <div class="pictureAndText clearfix">
+        <div class="picture">
+          <img src="http://p4cnv6qxt.bkt.clouddn.com/2.jpg" width=240 height=347 alt="头像">
+        </div>
+        <div class="text">
+          <span class="welcome">Hello
+            <span class="triangle"></span>
+          </span>
+          <h1>邱婉琳</h1>
+          <p>前端开发工程师</p>
+          <hr>
+          <dl>
+            <dt>年龄</dt>
+            <dd>21</dd>
+            <dt>所在城市</dt>
+            <dd>成都</dd>
+            <dt>邮箱</dt>
+            <dd>792534005@qq.com</dd>
+            <dt>手机</dt>
+            <dd>123456789</dd>
+          </dl>
+        </div>
+      </div>
+      <footer class="media">
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-tuitetwitter44"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weibo"></use>
+          </svg>
+        </a>
+      </footer>
+    </div>
+
+    <p class="download">
+      <a class="downRe" href="" target="_blank" download>下载 PDF 简历</a>
+    </p>
+    <p class="self">
+      邱婉琳， 巴拉巴拉巴拉，巴拉巴拉巴拉拉，现在在 饥人谷 学前端课程。
+      <br> 技能：前端开发，Rails 开发，Node.js 开发
+    </p>
+
+  </main>
+  <section data-x id="siteskills" class="skills">
+    <h2>技能</h2>
+    <ol class="clearfix">
+      <li>
+        <h3>
+          HTML 5 &amp; CSS 3
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 70%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          JavaScript
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 60%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          jQuery
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 30%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          Vue.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 45%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          React.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 50%"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          Node.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 70%"></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section data-x class="portfolio" id="siteworks">
+    <h2>作品集</h2>
+
+
+    <style>
+      .swiper-container {
+        width: 668px;
+        height: 501px;
+      }
+
+      .swiper-slide {
+        background: rgb(255, 229, 229);
+      }
+    </style>
+    <div id="myslides">
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <img src="./k.jpg" class="swiper-slide"></img>
+          <img src="./c.jpg" class="swiper-slide"></img>
+          <img src="./a.jpg" class="swiper-slide"></img>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+
+      </div>
+    </div>
+    <div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+  </section>
+
+  <section class="weisha">
+    <h2>留言</h2>
+    <ol id="messagelist"></ol>
+    <form id="postmessage" style="width:500px; margin: 100px auto;">
+      <input type="text" name="name">
+      <input type="text" name="content">
+      <input type="submit" value="提交">
+    </form>
+  </section>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+  <script src="//cdn1.lncld.net/static/js/3.6.8/av-min.js"></script>
+  <script src="./init-swiper.js"></script>
+  <script src="./auto-up.js"></script>
+  <script src="./sticky.js"></script>
+  <script src="./gototarget.js"></script>
+  <script src="./message.js"></script>
+</body>
+
+
+</html>
