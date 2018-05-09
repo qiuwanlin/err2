@@ -49,7 +49,10 @@ console.log(1)
         bindevents: function () {
             this.form.addEventListener('submit', function (e) {
                 e.preventDefault()
-                this.savemessage()
+                let myform = this.form
+                if(myform.querySelector('input[name=content]').value!==''||myform.querySelector('input[name=name]').value!==''){
+                    this.savemessage()
+                }
             }.bind(this))
         },
         savemessage: function () {
@@ -61,6 +64,8 @@ console.log(1)
                     let li = document.createElement('li')
                     li.innerText = `${object.attributes.name2}:${object.attributes.content} `
                     messagelist.appendChild(li)
+                    myform.querySelector('input[name=content]').value= ''
+                    myform.querySelector('input[name=name]').value= ''
                 })
         }
     }
